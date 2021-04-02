@@ -20,4 +20,4 @@ def predict():
     return render_template('index.html', prediction_text='A genre that you will like is {}'.format(output))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
