@@ -3,7 +3,7 @@ from flask import Flask, render_template, jsonify, request
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('Jupyter Notebook\music-recommender.pkl', 'rb'))
+model = pickle.load(open('music-recommender.pkl', 'rb'))
 
 @app.route('/')
 def home():
